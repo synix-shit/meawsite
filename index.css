@@ -1,0 +1,901 @@
+/* Общие стили и сброс */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 80px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Навигационное меню */
+/* Общие стили и сброс */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 80px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Обновленное навигационное меню с красивой кнопкой входа */
+.main-nav {
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #2c3e50;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 5px 0;
+}
+
+.nav-logo::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #5193f6, #6a11cb);
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+}
+
+.nav-logo:hover::after {
+    transform: translateX(0);
+}
+
+.nav-logo i {
+    margin-right: 10px;
+    color: #5193f6;
+    transition: transform 0.3s ease;
+}
+
+.nav-logo:hover i {
+    transform: rotate(15deg);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-left: 25px;
+    position: relative;
+}
+
+.nav-menu a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 8px 0;
+}
+
+.nav-menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #5193f6, #6a11cb);
+    transition: width 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+.nav-menu a:hover::before {
+    width: 100%;
+    opacity: 1;
+}
+
+.nav-menu a i {
+    margin-right: 8px;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.nav-menu a:hover i {
+    transform: translateY(-3px);
+}
+
+/* Новая красивая кнопка входа */
+.login-btn {
+    position: relative;
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 2px solid #5193f6;
+    color: #5193f6;
+    background: transparent;
+    box-shadow: 0 4px 15px rgba(81, 147, 246, 0.2);
+}
+
+.login-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(135deg, #5193f6, #6a11cb);
+    transition: width 0.4s ease;
+    z-index: -1;
+    border-radius: 50px;
+}
+
+.login-btn:hover::before {
+    width: 100%;
+}
+
+.login-btn:hover {
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(81, 147, 246, 0.4);
+    border-color: transparent;
+}
+
+.login-btn:active {
+    transform: translateY(1px);
+}
+
+.login-btn i {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.login-btn:hover i {
+    transform: translateX(3px);
+}
+
+/* Остальные стили кнопок */
+.nav-btn {
+    background: linear-gradient(135deg, #5193f6, #6a11cb);
+    color: white !important;
+    padding: 12px 28px;
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 15px rgba(81, 147, 246, 0.3);
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+.nav-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #6a11cb, #5193f6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.nav-btn:hover::before {
+    opacity: 1;
+}
+
+.nav-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.nav-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(81, 147, 246, 0.4);
+}
+
+.nav-btn:active {
+    transform: translateY(1px);
+}
+
+.nav-btn-white {
+    background-color: white;
+    color: #2c3e50 !important;
+    padding: 12px 28px;
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-btn-white::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.03);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.nav-btn-white:hover::before {
+    opacity: 1;
+}
+
+.nav-btn-white:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.nav-btn-white:active {
+    transform: translateY(1px);
+}
+
+.nav-btn-white.active {
+    background: linear-gradient(135deg, #5193f6, #6a11cb);
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(81, 147, 246, 0.3);
+}
+
+.mobile-menu-btn {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #2c3e50;
+    transition: transform 0.3s ease;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.mobile-menu-btn:hover {
+    background-color: rgba(81, 147, 246, 0.1);
+    transform: rotate(90deg);
+}
+
+/* Эффект при прокрутке */
+.main-nav.scrolled {
+    padding: 10px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.98);
+}
+
+.main-nav.scrolled .nav-logo {
+    font-size: 1.6rem;
+}
+
+/* Секция героя */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('photo1.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 160px 0;
+    margin-top: -80px;
+}
+
+.hero .container {
+    max-width: 800px;
+}
+
+.hero h1 {
+    color: white;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 3.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.register-btn {
+    display: inline-block;
+    background-color: #5193f6;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(81, 147, 246, 0.4);
+    border: none;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: #3a7bd5;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(81, 147, 246, 0.6);
+}
+
+.divider {
+    height: 4px;
+    width: 80px;
+    background: white;
+    margin: 50px auto;
+    opacity: 0.5;
+}
+
+/* Секция услуг */
+.services {
+    background-color: white;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.service-card ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.service-card ul li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 25px;
+    line-height: 1.6;
+}
+
+.service-card ul li:before {
+    content: "•";
+    color: #5193f6;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Секция контактов */
+.contacts-dark {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    padding: 120px 0;
+}
+
+.contacts-dark h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contacts-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.contact-info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.contact-item {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-item i {
+    margin-right: 15px;
+    color: #5193f6;
+    font-size: 1.2rem;
+    width: 25px;
+    text-align: center;
+}
+
+.contact-item a {
+    color: #5193f6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-left: 5px;
+}
+
+.contact-item a:hover {
+    color: #3a7bd5;
+    text-decoration: underline;
+}
+
+.map-container {
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-menu li {
+        margin: 15px 0;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .contacts-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .map-container {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    section {
+        padding: 70px 0;
+    }
+    
+    .hero {
+        padding: 120px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .register-btn {
+        padding: 14px 30px;
+        font-size: 1rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 100px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .contact-info {
+        padding: 30px;
+    }
+}
+/* Секция героя */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('photo1.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 160px 0;
+    margin-top: -80px;
+}
+
+.hero .container {
+    max-width: 800px;
+}
+
+.hero h1 {
+    color: white;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 3.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.register-btn {
+    display: inline-block;
+    background-color: #5193f6;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(81, 147, 246, 0.4);
+    border: none;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: #3a7bd5;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(81, 147, 246, 0.6);
+}
+
+.divider {
+    height: 4px;
+    width: 80px;
+    background: white;
+    margin: 50px auto;
+    opacity: 0.5;
+}
+
+/* Секция услуг */
+.services {
+    background-color: white;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.service-card ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.service-card ul li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 25px;
+    line-height: 1.6;
+}
+
+.service-card ul li:before {
+    content: "•";
+    color: #5193f6;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Секция контактов */
+.contacts-dark {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    padding: 120px 0;
+}
+
+.contacts-dark h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contacts-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.contact-info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.contact-item {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-item i {
+    margin-right: 15px;
+    color: #5193f6;
+    font-size: 1.2rem;
+    width: 25px;
+    text-align: center;
+}
+
+.contact-item a {
+    color: #5193f6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-left: 5px;
+}
+
+.contact-item a:hover {
+    color: #3a7bd5;
+    text-decoration: underline;
+}
+
+.map-container {
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-menu li {
+        margin: 15px 0;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .contacts-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .map-container {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    section {
+        padding: 70px 0;
+    }
+    
+    .hero {
+        padding: 120px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .register-btn {
+        padding: 14px 30px;
+        font-size: 1rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 100px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .contact-info {
+        padding: 30px;
+    }
+}

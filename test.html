@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>мяу сайт</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="photo3.png" type="image/x-icon">
+    <link rel="icon" type="image/png" href="photo3.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="photo3.png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="photo3.png">
+</head>
+<body>
+    <!-- Анимированное меню -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+            </a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="knigi.html"><i class="fas fa-clipboard-list"></i> Книги</a></li>
+                <li><a href="stati.html"><i class="fas fa-info-circle"></i> Статьи</a></li>
+                <li><a href="log.html" class="login-btn"><i class="fas fa-user"></i> Войти</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Герой-секция с анимацией -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Раскрой тайны своего сознания</h1>
+            <p class="hero-subtitle">Профессиональные психологические тесты для глубокого самопознания</p>
+            <div class="cta-buttons">
+                <a href="#tests" class="btn-primary">Начать исследование</a>
+                <a href="#how-it-works" class="btn-secondary">Как это работает?</a>
+            </div>
+        </div>
+        <div class="hero-illustration">
+            <div class="brain-animation"></div>
+        </div>
+    </header>
+
+    <!-- Как это работает - анимированные шаги -->
+    <section class="how-it-works" id="how-it-works">
+        <h2 class="section-title">Ваш путь к самопознанию</h2>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-icon pulse">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Выберите тест</h3>
+                <p>Подберите тест, соответствующий вашим текущим интересам и потребностям</p>
+            </div>
+            <div class="step">
+                <div class="step-icon pulse">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <h3>Ответьте честно</h3>
+                <p>Отвечайте спонтанно - не задумывайтесь слишком долго над каждым вопросом</p>
+            </div>
+            <div class="step">
+                <div class="step-icon pulse">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+                <h3>Получите анализ</h3>
+                <p>Подробный разбор ваших результатов с персональными рекомендациями</p>
+            </div>
+            <div class="step">
+                <div class="step-icon pulse">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Примените знания</h3>
+                <p>Используйте полученные инсайты для личностного роста и развития</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Категории тестов с hover-эффектами -->
+    <section class="test-categories" id="tests">
+        <h2 class="section-title">Исследуйте разные грани своей личности</h2>
+        <div class="categories-grid">
+            <div class="category-card" style="--card-color: #6a11cb">
+                <div class="category-icon">
+                    <i class="fas fa-user-astronaut"></i>
+                </div>
+                <h3>Тип личности</h3>
+                <p>Узнайте свои когнитивные предпочтения и стиль мышления</p>
+                <a href="#" class="category-btn">Исследовать <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="category-card" style="--card-color: #2575fc">
+                <div class="category-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Эмоциональный интеллект</h3>
+                <p>Оцените свою способность понимать и управлять эмоциями</p>
+                <a href="#" class="category-btn">Исследовать <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="category-card" style="--card-color: #f857a6">
+                <div class="category-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Мотивация</h3>
+                <p>Определите свои главные движущие силы и источники энергии</p>
+                <a href="#" class="category-btn">Исследовать <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="category-card" style="--card-color: #ff8c00">
+                <div class="category-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3>Профессиональные склонности</h3>
+                <p>Откройте свои природные таланты и идеальную карьерную траекторию</p>
+                <a href="#" class="category-btn">Исследовать <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Популярные тесты с рейтингами -->
+    <section class="featured-tests">
+        <h2 class="section-title">Самые популярные исследования</h2>
+        <div class="tests-slider">
+            <div class="test-card">
+                <div class="test-rating">
+                    <span class="stars">★★★★★</span>
+                    <span>4.9 (1,243)</span>
+                </div>
+                <div class="test-content">
+                    <h3>Методология MBTI</h3>
+                    <p>Определите свой тип личности по классификации Майерс-Бриггс</p>
+                    <div class="test-stats">
+                        <span><i class="fas fa-question"></i> 60 вопросов</span>
+                        <span><i class="fas fa-clock"></i> 15 мин</span>
+                    </div>
+                </div>
+                <a href="#" class="test-btn">Пройти тест</a>
+            </div>
+            
+            <div class="test-card">
+                <div class="test-rating">
+                    <span class="stars">★★★★☆</span>
+                    <span>4.7 (892)</span>
+                </div>
+                <div class="test-content">
+                    <h3>Эмоциональный интеллект EQ</h3>
+                    <p>Оцените 5 ключевых компонентов вашего эмоционального интеллекта</p>
+                    <div class="test-stats">
+                        <span><i class="fas fa-question"></i> 45 вопросов</span>
+                        <span><i class="fas fa-clock"></i> 12 мин</span>
+                    </div>
+                </div>
+                <a href="#" class="test-btn">Пройти тест</a>
+            </div>
+            
+            <div class="test-card">
+                <div class="test-rating">
+                    <span class="stars">★★★★★</span>
+                    <span>4.8 (1,076)</span>
+                </div>
+                <div class="test-content">
+                    <h3>Темперамент по Айзенку</h3>
+                    <p>Узнайте свой темперамент: холерик, сангвиник, флегматик или меланхолик</p>
+                    <div class="test-stats">
+                        <span><i class="fas fa-question"></i> 57 вопросов</span>
+                        <span><i class="fas fa-clock"></i> 10 мин</span>
+                    </div>
+                </div>
+                <a href="#" class="test-btn">Пройти тест</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Персональные рекомендации -->
+    <section class="personal-recommendations">
+        <div class="recommendation-content">
+            <h2>Персональный план развития</h2>
+            <p>После прохождения тестов вы получите индивидуальные рекомендации по развитию ваших сильных сторон и работе над слабыми местами</p>
+            <ul class="recommendation-features">
+                <li><i class="fas fa-check-circle"></i> Книги и статьи по вашей психотипу</li>
+                <li><i class="fas fa-check-circle"></i> Упражнения для тренировки навыков</li>
+                <li><i class="fas fa-check-circle"></i> Рекомендации по карьере</li>
+                <li><i class="fas fa-check-circle"></i> Советы по улучшению отношений</li>
+            </ul>
+        </div>
+        <div class="recommendation-illustration">
+            <div class="floating-elements">
+                <div class="floating-element book"></div>
+                <div class="floating-element graph"></div>
+                <div class="floating-element heart"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                </a>
+                <p>Познай себя - измени свою жизнь</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="links-column">
+                    <h4>Тесты</h4>
+                    <ul>
+                        <li><a href="#">Личность</a></li>
+                        <li><a href="#">Интеллект</a></li>
+                        <li><a href="#">Карьера</a></li>
+                        <li><a href="#">Отношения</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Психолгия и саморазвитие. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>мяу сайт</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="log.css">
+    <link rel="icon" href="photo3.png" type="image/x-icon">
+    <link rel="icon" type="image/png" href="photo3.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="photo3.png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="photo3.png">
+
+</head>
+<body>
+    <!-- Навигационное меню -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+            </a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="knigi.html"><i class="fas fa-clipboard-list"></i> Книги</a></li>
+                <li><a href="stati.html"><i class="fas fa-info-circle"></i> Статьи</a></li>
+                <li><a href="log.html" class="login-btn"><i class="fas fa-user"></i> Войти</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Основное содержимое -->
+    <main class="auth-container">
+        <div class="auth-wrapper">
+            <div class="auth-illustration">
+                <div style="text-align: center; z-index: 1;">
+                    <i class="fas fa-user-lock" style="font-size: 5rem; margin-bottom: 30px; animation: float 5s ease-in-out infinite;"></i>
+                    <h2 style="color: white;">Добро пожаловать!</h2>
+                    <p style="color: rgba(255, 255, 255, 0.9);">Войдите или зарегистрируйтесь, чтобы получить доступ ко всем возможностям</p>
+                </div>
+            </div>
+            <div class="auth-content">
+                <div class="auth-tabs">
+                    <div class="auth-tab active" data-tab="login">Вход</div>
+                    <div class="auth-tab" data-tab="register">Регистрация</div>
+                </div>
+
+                <!-- Форма входа -->
+                <form id="login-form" class="auth-form active">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" class="form-control" placeholder="Введите ваш email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Пароль</label>
+                        <input type="password" id="login-password" class="form-control" placeholder="Введите ваш пароль" required>
+                    </div>
+                    <button type="submit" class="btn-auth">
+                        <i class="fas fa-sign-in-alt"></i> Войти
+                    </button>
+                    <div class="auth-footer">
+                        <a href="#" class="forgot-password">Забыли пароль?</a>
+                    </div>
+
+                    <div class="social-auth">
+                        <p>Или войдите через</p>
+                        <div class="social-buttons">
+                            <a href="#" class="social-btn google">
+                                <i class="fab fa-google"></i> Google
+                            </a>
+                            <a href="#" class="social-btn facebook">
+                                <i class="fab fa-facebook-f"></i> Facebook
+                            </a>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Форма регистрации -->
+                <form id="register-form" class="auth-form">
+                    <div class="form-group">
+                        <label for="register-name">Имя</label>
+                        <input type="text" id="register-name" class="form-control" placeholder="Введите ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" class="form-control" placeholder="Введите ваш email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Пароль</label>
+                        <input type="password" id="register-password" class="form-control" placeholder="Создайте пароль" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm">Подтвердите пароль</label>
+                        <input type="password" id="register-confirm" class="form-control" placeholder="Повторите пароль" required>
+                    </div>
+                    <button type="submit" class="btn-auth">
+                        <i class="fas fa-user-plus"></i> Зарегистрироваться
+                    </button>
+                    <div class="auth-footer">
+                        Уже есть аккаунт? <a href="#" class="switch-to-login">Войти</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Переключение между вкладками
+        document.querySelectorAll('.auth-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Удаляем активный класс у всех вкладок
+                document.querySelectorAll('.auth-tab').forEach(t => t.classList.remove('active'));
+                // Добавляем активный класс текущей вкладке
+                this.classList.add('active');
+                
+                // Скрываем все формы
+                document.querySelectorAll('.auth-form').forEach(form => form.classList.remove('active'));
+                // Показываем соответствующую форму
+                document.getElementById(`${this.dataset.tab}-form`).classList.add('active');
+            });
+        });
+
+        // Переключение на форму входа
+        document.querySelector('.switch-to-login')?.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('.auth-tab[data-tab="login"]').click();
+        });
+
+        // Обработка форм
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Форма входа отправлена!');
+            // Здесь можно добавить AJAX-запрос для авторизации
+        });
+
+        document.getElementById('register-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Форма регистрации отправлена!');
+            // Здесь можно добавить AJAX-запрос для регистрации
+        });
+
+        // Мобильное меню
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        menuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

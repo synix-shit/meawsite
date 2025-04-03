@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>мяу сайт</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="knigi.css">
+  <link rel="icon" href="photo3.png" type="image/x-icon">
+  <link rel="icon" type="image/png" href="photo3.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="photo3.png" sizes="16x16">
+  <link rel="apple-touch-icon" sizes="180x180" href="photo3.png">
+</head>
+<body>
+  <!-- Навигационное меню -->
+  <nav class="glass-nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+      </a>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+        <li><a href="test.html"><i class="fas fa-question-circle"></i> Тесты</a></li>
+        <li><a href="stati.html"><i class="fas fa-book-open"></i> Статьи</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Контакты</a></li>
+        <li><a href="log.html" class="login-btn"><i class="fas fa-user"></i> Войти</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Герой-секция -->
+  <header class="books-hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Лучшие книги по психологии</h1>
+      <p class="hero-subtitle">Откройте для себя знания, которые помогут вам понять себя и других</p>
+      <div class="hero-badge">
+        <i class="fas fa-star"></i> Рекомендовано психологами
+      </div>
+    </div>
+  </header>
+
+  <!-- Категории книг -->
+  <section class="book-categories">
+    <div class="container">
+      <h2 class="section-title">Категории книг</h2>
+      <div class="categories-grid">
+        <div class="category-card" style="--card-color: #6a11cb">
+          <div class="category-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>Саморазвитие</h3>
+          <p>Книги, которые помогут вам раскрыть свой потенциал</p>
+          <a href="#self-development" class="category-btn">Смотреть <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="category-card" style="--card-color: #2575fc">
+          <div class="category-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3>Отношения</h3>
+          <p>Как строить здоровые отношения с окружающими</p>
+          <a href="#relationships" class="category-btn">Смотреть <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="category-card" style="--card-color: #f857a6">
+          <div class="category-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Успех</h3>
+          <p>Принципы достижения успеха в жизни и карьере</p>
+          <a href="#success" class="category-btn">Смотреть <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Популярные книги -->
+  <section class="featured-books" id="self-development">
+    <div class="container">
+      <h2 class="section-title">Популярные книги по саморазвитию</h2>
+      <div class="books-grid">
+        <article class="book-card">
+          <div class="book-cover">
+            <img src="1.webp" alt="Сила разума. Джо Диспенза">
+            <div class="book-badge">Бестселлер</div>
+          </div>
+          <div class="book-info">
+            <h3>Сила разума</h3>
+            <div class="book-meta">
+              <span class="book-author"><i class="fas fa-user"></i> Джо Диспенза</span>
+              <span class="book-rating"><i class="fas fa-star"></i> 4.8</span>
+            </div>
+            <p>Как развить психологическую устойчивость и изменить свою жизнь с помощью силы мысли.</p>
+            <a href="#" class="book-btn">
+              <i class="fas fa-book-open"></i> Читать онлайн
+            </a>
+          </div>
+        </article>
+
+        <article class="book-card">
+          <div class="book-cover">
+            <img src="2.webp" alt="НИ СЫ, НЕ НОЙ">
+            <div class="book-badge">Новинка</div>
+          </div>
+          <div class="book-info">
+            <h3>НИ СЫ, НЕ НОЙ и НЕ ТУПИ</h3>
+            <div class="book-meta">
+              <span class="book-author"><i class="fas fa-user"></i> Джен Синсеро</span>
+              <span class="book-rating"><i class="fas fa-star"></i> 4.7</span>
+            </div>
+            <p>Методики работы над собой, которые помогут повысить уровень энергии и мотивации.</p>
+            <a href="#" class="book-btn">
+              <i class="fas fa-book-open"></i> Читать онлайн
+            </a>
+          </div>
+        </article>
+
+        <article class="book-card">
+          <div class="book-cover">
+            <img src="3.webp" alt="Терапия настроения">
+            <div class="book-badge">Выбор экспертов</div>
+          </div>
+          <div class="book-info">
+            <h3>Терапия настроения</h3>
+            <div class="book-meta">
+              <span class="book-author"><i class="fas fa-user"></i> Дэвид Бернс</span>
+              <span class="book-rating"><i class="fas fa-star"></i> 4.9</span>
+            </div>
+            <p>Клинически доказанные способы победить депрессию и развить здоровую самооценку.</p>
+            <a href="#" class="book-btn">
+              <i class="fas fa-book-open"></i> Читать онлайн
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Цитата автора -->
+  <section class="author-quote">
+    <div class="container">
+      <blockquote>
+        <p>"Книги по психологии - это зеркало, в котором мы можем увидеть свое истинное я."</p>
+        <footer>- Карл Юнг</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+        </a>
+        <p>Помогаем вам понять себя и развивать свой потенциал с 2025 года.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-vk"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <div class="links-column">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="tests.html">Тесты</a></li>
+            <li><a href="stati.html">Статьи</a></li>
+            <li><a href="knigi.html">Книги</a></li>
+          </ul>
+        </div>
+        
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Саморазвитие и Психология. Все права защищены.</p>
+      <div class="legal-links">
+      </div>
+    </div>
+  </footer>
+
+  <script src="knigi.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>мяу сайт</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="photo3.png" type="image/x-icon">
+  <link rel="icon" type="image/png" href="photo3.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="photo3.png" sizes="16x16">
+  <link rel="apple-touch-icon" sizes="180x180" href="photo3.png">
+</head>
+<body>
+  <nav class="glass-nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+      </a>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+        <li><a href="tests.html"><i class="fas fa-question-circle"></i> Тесты</a></li>
+        <li><a href="stati.html"><i class="fas fa-book-open"></i> Статьи</a></li>
+        <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Контакты</a></li>
+        <li><a href="log.html" class="login-btn"><i class="fas fa-user"></i> Войти</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="contact-hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Свяжитесь с нами</h1>
+      <p class="hero-subtitle">Мы всегда рады вашим вопросам, предложениям и отзывам</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2 class="section-title">Наши контакты</h2>
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h3>Электронная почта</h3>
+              <p><a href="mailto:sashayudin.07@mail.ru">sashayudin.07@mail.ru</a></p>
+            </div>
+            
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <h3>Телефон</h3>
+              <p><a href="tel:+77777777777">+7 (777) 777-77-77</a></p>
+            </div>
+            
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-share-alt"></i>
+              </div>
+              <h3>Социальные сети</h3>
+              <div class="social-links">
+                <a href="https://vk.com/" target="_blank" class="social-btn vk">
+                  <i class="fab fa-vk"></i> 
+                </a>
+                <a href="https://youtube.com/" target="_blank" class="social-btn youtube">
+                  <i class="fab fa-youtube"></i> 
+                </a>
+                <a href="https://rutube.ru/" target="_blank" class="social-btn rutube">
+                  <i class="fas fa-play-circle"></i> 
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form-wrapper">
+            <h2 class="section-title">Форма обратной связи</h2>
+            <form class="contact-form" action="#" method="post">
+              <div class="form-group">
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Ваш email</label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Тема сообщения</label>
+                <select id="subject" name="subject">
+                  <option value="question">Вопрос</option>
+                  <option value="feedback">Отзыв</option>
+                  <option value="suggestion">Предложение</option>
+                  <option value="other">Другое</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Ваше сообщение</label>
+                <textarea id="message" name="message" placeholder="Введите ваше сообщение" rows="5" required></textarea>
+              </div>
+              
+              <button type="submit" class="btn-primary">
+                <i class="fas fa-paper-plane"></i> Отправить сообщение
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+        </a>
+        <p>Помогаем вам понять себя и развивать свой потенциал с 2025 года.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-vk"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <div class="links-column">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="tests.html">Тесты</a></li>
+            <li><a href="knigi.html">Книги</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
+        </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Саморазвитие и Психология. Все права защищены.</p>
+      <div class="legal-links">
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
